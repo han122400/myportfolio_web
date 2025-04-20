@@ -5,6 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SECON 후기 - 한빈's Portfolio</title>
     <link rel="stylesheet" href="styles.css" />
+    <style>
+      /* 반응형 이미지 스타일 */
+      @media (max-width: 480px) {
+        img {
+          max-width: 100% !important;
+          height: auto !important;
+        }
+      }
+    </style>
   </head>
   <body>
     <header>
@@ -16,24 +25,38 @@
       <h1>📝 한빈's Portfolio</h1>
       <nav>
         <a href="index.html">메인</a>
-        <a href="projects.html">프로젝트</a>
-        <a href="my.html">나의 프로필</a>
+        <a href="my.html">나의 프로필 & 프로젝트</a>
         <a href="secon.html">SECON 후기</a>
         <a href="team.html">팀 프로젝트</a>
       </nav>
     </header>
+    <br/><br/>
     <main>
-      <section class="container">
-        <h2>SECON 후기</h2>
-        <p>
+      <section class="my-container">
+        <h2 class="my-h2">2025 SECON</h2>
+        <p style="font-weight: 700">
           SECON은 보안 및 전자 기술 관련 전시회로, 최신 기술 트렌드와 솔루션을
-          소개하는 자리입니다.
+          소개하는 자리입니다
         </p>
         <p>
-          2025년 SECON에 참석하며 다양한 보안 기술을 접할 수 있었습니다. 특히
-          [특정 세션/기술]이 인상 깊었고, 네트워킹 기회도 많았습니다.
+          SECON에 참석하며 다양한 보안 기술을 접할 수 있었습니다.<br/>특히
+          딥러닝기반 영상분석이 인상 깊었고, 보안 시장의 최신 트렌드를 알 수 있어서 좋았습니다.
         </p>
       </section>
+      <br/><br/><br/>
+
+        <section class="my-container">
+          <h2 class="my-h2">📷 참가 사진</h2>
+          <p style="font-weight: 700">
+            같은 학과 동기들가 다같이 가서 세미나도 듣고, 부스도 돌아다니며 재미있고 유익한 시간을 보냈습니다.</p>
+          <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 30px;">
+            <img src="images/secon_1.jpg" alt="SECON 1" style="width: 80%; border-radius: 50px;">
+            <img src="images/secon_2.jpg" alt="SECON 2" style="width: 80%; border-radius: 50px;">
+            <img src="images/secon_3.jpg" alt="SECON 3" style="width: 80%; border-radius: 50px;">
+            <img src="images/secon_4.jpg" alt="SECON 4" style="width: 80%; border-radius: 50px;">
+          </div>
+          <br/>
+        </section>
     </main>
     <footer>
       <p>© 2025 한빈's Portfolio</p>

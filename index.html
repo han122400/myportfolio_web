@@ -5,6 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>한빈's Portfolio</title>
     <link rel="stylesheet" href="styles.css" />
+    <style>
+      /* 반응형 이미지 스타일 */
+      @media (max-width: 480px) {
+        img {
+          max-width: 100% !important;
+          height: auto !important;
+        }
+      }
+    </style>
   </head>
   <body>
     <header>
@@ -16,15 +25,14 @@
       <h1>📝 한빈's Portfolio</h1>
       <nav>
         <a href="index.html">메인</a>
-        <a href="projects.html">프로젝트</a>
-        <a href="my.html">나의 프로필</a>
+        <a href="my.html">나의 프로필 & 프로젝트</a>
         <a href="secon.html">SECON 후기</a>
         <a href="team.html">팀 프로젝트</a>
       </nav>
     </header>
 
     <main>
-      <section id="main" class="container">
+      <section id="main" class="container" style="padding: 30px 50px;">
         <h2>메인 페이지</h2>
         <p>안녕하세요😊 제 포트폴리오에 오신 것을 환영합니다.</p>
         <img
@@ -40,27 +48,22 @@
         />
       </section>
 
-      <section id="projects" class="container">
-        <h2>프로젝트</h2>
-        <p>제가 진행한 주요 프로젝트들을 소개합니다.</p>
+      <section id="profile" class="container" style="padding: 30px 50px;">
+        <h2>나의 프로필 & 프로젝트</h2>
+        <p>저에 대한 간단한 자기소개와 제가 한 프로젝트를 소개합니다.</p>
       </section>
 
-      <section id="profile" class="container">
-        <h2>나의 프로필</h2>
-        <p>저에 대한 간단한 자기소개와와 개인적인 이야기를 담았습니다.</p>
-      </section>
-
-      <section id="secon" class="container">
+      <section id="secon" class="container" style="padding: 30px 50px;">
         <h2>SECON 후기</h2>
         <p>SECON 참가 후기와 정보보을 공유합니다.</p>
       </section>
 
-      <section id="team" class="container">
+      <section id="team" class="container" style="padding: 30px 50px;">
         <h2>team 프로젝트</h2>
         <p>웹프로그래밍 팀플에 관련하여 설명합니다.</p>
       </section>
 
-      <section class="container">
+      <section class="container" style="padding: 10px 50px;">
         <p
           style="background-color: orange; display: inline-block; padding: 5px"
         >
